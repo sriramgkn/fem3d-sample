@@ -1,0 +1,50 @@
+# Simple config file for FEM to be used with fem3d
+# White space in the config files don't matter
+# But file/variable names should not contain white spaces
+# All specifications must be in lower case
+
+# Wavelength in meters
+lambda = 1
+
+meshfile = meshes/mesh_1e0_al1.inp
+
+#This can be a number or comma-separated list
+theta = 180
+phi = 180
+
+#angular coordinates at far field (initially)
+thetp = 0
+php = 0
+
+radius_a = 1
+dist_fac = 100
+
+#Substrate tye: this can be soil, ice, wetice, misc
+#If misc, then specify real and imag separately, imag<0 for loss
+#substrate = ice
+substrate = misc
+real = 2.56
+imag = 0
+
+#If soil, number of layers must be specified first
+#depth must  be specified first, followed by sand, clay, density
+#layers = 1
+#depth = 0
+#sand = 0.36
+#clay = 0.55
+#density = 1.7
+#Must be specified for soil or wetice, 0 < |moisture| < 1
+#comma separated list for polynomial expansion in case of soil
+#moisture = 0.30
+
+#Number of monte carlo runs
+mcarlo = 75
+
+#Roughless (in terms of kh) and correlation length (in terms of h)
+#correlation must be non zero
+#sampling is defined as the fraction of lambda, i.e. for lambda/40, sampling = 40
+#statistics must be either exponential or gaussian
+roughness = 0.3
+correlation = 10.0
+sampling = 20
+statistics = gaussian
