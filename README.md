@@ -14,6 +14,6 @@ The image below depicts how we mesh the computational domain tetrehedrally using
 
 ![problem setting](sample-image/geometry_meshing.jpg)
 
-The image below validates our formalism and implementation of Huygen's principle via dyadic Green's functions.
+The image below validates our formalism and implementation of Huygen's principle via dyadic Green's functions. Note that it propogates near-field Mie series to far-field and checks if that is consistent with Mie Series at far-field. So while we are pleased to have a perfectly working Huygen's principle formalism discretized correctly, this does not validate our FEM formalism itself that numerically computes near-field with some error accumulated from matrix inversion and as well our choice of basis functions and boundary conditions.
 
 ![huygen validated](sample-image/huy_mie_matlab.jpg)
