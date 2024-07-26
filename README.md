@@ -1,4 +1,4 @@
-This repository contains sample C++ codes that simulate electromagnetic scattering for specialized applications in remote sensing. These codes were developed as part of a collaborative research project on remote sensing, and are public primarily to verify my background in C++. We intentionally refrain from a detailed explanation of how these codes work in this readme file. 
+This repository contains sample C++ codes that simulate electromagnetic scattering for specialized applications in remote sensing. These codes were developed as part of a collaborative research project on remote sensing, and are public primarily to verify my background in C++ and MATLAB. We refrain from a detailed explanation of how these codes work in this readme file. 
 
 However, we recommend reading our [documentation](https://sriramgkn.github.io/reports/FEM_3D_docum.pdf) and [thesis](https://sriramgkn.github.io/reports/Sriram_thesis_final.pdf) to understand the mathematics and physics of vector finite element methods in electromagnetics.
 
@@ -13,3 +13,7 @@ The image below depicts the problem setting of the forward model. The knowns are
 The image below depicts how we mesh the computational domain tetrehedrally using Gmsh, and the vector basis functions intrinsic to each tetrahedron (Nedelec element).
 
 ![problem setting](sample-image/geometry_meshing.jpg)
+
+The image below validates our formalism and implementation of Huygen's principle via dyadic Green's functions.
+
+![huygen validated](sample-image/huy_mie_matlab.jpg)
